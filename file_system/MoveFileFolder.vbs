@@ -1,4 +1,6 @@
-Sub Move_FileFolder(FolderName)
+Sub Move_FileFolder()
+    FolderName = "C:\Users\ISPark\Desktop\DGB\bmt\make_service\card_ocr_text\makeData\run"
+    
     Set objFSO = CreateObject("Scripting.FileSystemObject")
     Set objFolder = objFSO.GetFolder(FolderName)
     Set Files = objFolder.Files
@@ -24,6 +26,4 @@ Sub Move_FileFolder(FolderName)
 
 End Sub 
 
-FolderName = "C:\Users\ISPark\Desktop\DGB\bmt\make_service\card_ocr_text\makeData\run"
-
-call Move_FileFolder(FolderName)
+call Move_FileFolder

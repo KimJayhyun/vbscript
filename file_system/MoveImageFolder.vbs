@@ -1,4 +1,6 @@
-Sub Move_ImageFolder(FolderName)
+Sub Move_ImageFolder()
+    FolderName = "C:\Users\ISPark\Desktop\DGB\bmt\make_service\card_ocr_text\makeData\img"
+    
     Set objFSO = CreateObject("Scripting.FileSystemObject")
     Set objFolder = objFSO.GetFolder(FolderName)
     Set subFolders = objFolder.SubFolders
@@ -22,9 +24,10 @@ Sub Move_ImageFolder(FolderName)
         Next    
 
        objFSO.DeleteFolder(ele) 
+       
     Next
+    
+
 End Sub 
 
-FolderName = "C:\Users\ISPark\Desktop\DGB\bmt\make_service\card_ocr_text\makeData\img"
-
-call Move_ImageFolder(FolderName)
+call Move_ImageFolder()

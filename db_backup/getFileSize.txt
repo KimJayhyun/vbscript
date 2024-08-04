@@ -1,0 +1,10 @@
+:loop
+For /F "usebackq" %%A In ('%fileName%') Do set size=%%~zA
+IF %size%==0 (
+    timeout /t 10
+)
+if %size%==0 goto loop
+
+set a=done
+
+exit /b %a%

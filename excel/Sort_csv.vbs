@@ -30,8 +30,10 @@ sub Sort_csv(filePath)
 
     Set oShell = CreateObject("WScript.Shell")
     oShell.Popup "Sort_csv", 2
+
 End Sub
 
-filePath = "C:\Users\ISPark\Desktop\test\sort_test.csv"
 
+
+filePath = "C:\Users\ISPark\Desktop\test\sort_test.csv"
 call Sort_csv(filePath)

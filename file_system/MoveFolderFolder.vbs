@@ -1,4 +1,6 @@
-Sub Move_FolderFolder(FolderName, dest)
+Sub Move_FolderFolder()
+    FolderName = "C:\A2OMSP\Test\AIDA_Data\Test\Marketing\ModelTest\2-2\run_01"
+    dest = "C:\A2OMSP\Test\AIDA_Data\Test\Marketing\ModelTest\2-2\run_02"
     Set objFSO = CreateObject("Scripting.FileSystemObject")
     Set objFolder = objFSO.GetFolder(FolderName)
     Set Folders = objFolder.subFolders
@@ -13,9 +15,8 @@ Sub Move_FolderFolder(FolderName, dest)
         End If 
  
     Next
+    
+
 End Sub 
 
-FolderName = "C:\A2OMSP\Test\AIDA_Data\Test\Marketing\ModelTest\2-2\run_01"
-dest = "C:\A2OMSP\Test\AIDA_Data\Test\Marketing\ModelTest\2-2\run_02"
-
-call Move_FolderFolder(FolderName, dest)
+call Move_FolderFolder

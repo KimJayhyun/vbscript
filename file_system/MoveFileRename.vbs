@@ -1,4 +1,5 @@
-Sub Move_FileRename(FolderName)
+Sub Move_FileRename()
+    FolderName = "C:\A2OMSP\AIDA_Design\Marketing\2-1\aaaaaa"
     Set objFSO = CreateObject("Scripting.FileSystemObject")
     Set objFolder = objFSO.GetFolder(FolderName)
     Set Files = objFolder.Files
@@ -11,8 +12,8 @@ Sub Move_FileRename(FolderName)
           
        
     Next
+    
+
 End Sub 
 
-FolderName = "C:\A2OMSP\AIDA_Design\Marketing\2-1\aaaaaa"
-
-call Move_FileRename(FolderName)
+call Move_FileRename

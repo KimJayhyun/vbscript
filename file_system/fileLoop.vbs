@@ -6,6 +6,4 @@ sub fileLoop(folderPath)
     Next
 End Sub
 
-folderPath = "C:\Users\ISPark\Desktop\code\Module"
-
-call fileLoop(folderPath)
+call fileLoop("C:\Users\ISPark\Desktop\code\Module")

@@ -8,6 +8,20 @@ Sub Summarize_CSV(csvPath)
 
     xlCSV = 6
 
+    'objWorksheet.Columns("A").Cut
+    'objWorksheet.Columns("B").Select
+    'objWorksheet.Paste
+    
+    'objWorksheet.Columns("A").Delete
+
+    
+
+
+
+
+
+    
+
     objExcel.ActiveWorkBook.SaveAs csvPath, xlCSV
     objExcel.ActiveWorkBook.Close False
     objExcel.quit

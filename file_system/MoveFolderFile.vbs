@@ -1,4 +1,6 @@
-Sub Move_FileFolder(FolderName)    
+Sub Move_FileFolder()
+    FolderName = "C:\Users\ISPark\Desktop\DGB\cardData\PDFtoPNG\card_all\1"
+    
     Set objFSO = CreateObject("Scripting.FileSystemObject")
     Set objFolder = objFSO.GetFolder(FolderName)
     Set subFolders = objFolder.SubFolders
@@ -20,8 +22,8 @@ Sub Move_FileFolder(FolderName)
        objFSO.DeleteFolder(ele) 
        
     Next
+    
+
 End Sub 
 
-FolderName = "C:\Users\ISPark\Desktop\DGB\cardData\PDFtoPNG\card_all\1"
-
-call Move_FileFolder(FolderName)
+call Move_FileFolder()
